@@ -1,0 +1,128 @@
+/*
+Theme Name: Cafe & Restaurent HORI
+Theme URI:
+Version: 1.0
+***/
+
+@mixin font-face($family,$src,$weight: normal,$style: normal) {
+	@font-face {
+		font-family: $family;
+		src: url('#{$src}.eot'); // IE9 compat
+		src: url('#{$src}.eot?#iefix') format('embedded-opentype'), // IE8 and below
+		url('#{$src}.woff') format('woff'), // standards
+		url('#{$src}.ttf') format('truetype'), // Safari, Android, iOS
+		url('#{$src}.svg##{$family}') format('svg'); // legacy iOS
+		font-style: $style;
+		font-weight: $weight;
+	}
+}
+@include font-face('SanFranciscoText-Regular', '../fonts/SanFranciscoText-Regular');
+
+body {
+	font-family: 'SanFranciscoText-Regular';
+	background-color: #fff;
+	position: relative;
+	a{
+		text-decoration: none;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	#wrapper{
+		overflow: hidden;
+		display: block;
+		position: relative;
+		font-family: 'SanFranciscoText-Regular';
+		%allTrans{
+			-o-transition:all .2s ease-in-out;
+			-moz-transition:all .2s ease-in-out;
+			-webkit-transition:all .2s ease-in-out;
+			-ms-transition:all .2s ease-in-out;
+			transition:all .2s ease-in-out;
+		}
+	}
+}
+#wrapper{
+
+	/* Page1 */
+	#page-1{
+		background: url(../images/pattern-page1.jpg) repeat center top;
+		width: 100%;
+		max-height: 850px;
+		height: 100%;
+		display: block;
+		overflow: hidden;
+		position: relative;
+		z-index: 1;
+
+		.header{
+			display: block;
+			margin-top: 20px;
+			z-index: 3;
+
+			.about-us{
+				background: url(../images/pattern-page1.jpg) repeat center top;
+				border: 1px solid #f1f1f1;
+				color: #fff;
+				border-radius: 3px;
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+				@extend %allTrans;
+
+				&:hover{
+					background: #fff;
+					color: #ff5400;
+				}
+			}
+		}
+
+		.content{
+			display: block;
+			overflow: hidden;
+			position: relative;
+			text-align: center;
+			margin-top: -60px;
+
+			.model{
+				width: 100%;
+				height: 850px;
+				background: url(../images/model.png) no-repeat center bottom;
+				display: block;
+				z-index: 2;
+				margin-left: -35px;
+			}
+			.h3-content{
+				z-index: 3;
+				position: absolute;
+				top: 35%;
+
+				h3{
+					font-size: 20px;
+					color: #fff;
+					text-transform: uppercase;
+					letter-spacing: 7px;
+					margin-bottom: 40px;
+				}
+				button{
+					font-size: 18px;
+					text-transform: uppercase;
+					letter-spacing: 3px;
+					background: #ff5400;
+					color: #fff;
+					border: 0;
+					border-radius: 3px;
+					-moz-border-radius: 3px;
+					-webkit-border-radius: 3px;
+					@extend %allTrans;
+
+					&:hover{
+						color: #ff5400;
+						background: #fff;
+					}
+				}
+			}
+		}
+	}
+}
+
+
