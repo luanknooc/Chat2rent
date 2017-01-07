@@ -1,27 +1,4 @@
 $(document).ready(function(){
-
-	//Auto Load Content
-	function loadNow(){
-	  $("#themes").load("theme-item");
-	}
-	setInterval(function(){loadNow()}, 2000);
-
-	//TopBar
-	if($('.navbar').length){
-		var navbar = function(){
-			if($(window).scrollTop() > 1){
-				$('.navbar-brand img').css({'width':'95%'});
-				$('.navbar').css({'margin-top':'-5px'});
-			}else{
-				$('.navbar-brand img').css({'width':'100%'});
-				$('.navbar').css({'margin-top':'0px'});
-			}
-		};
-		navbar();
-		$(window).on('scroll', function(){
-			navbar();
-		});
-	}
 	
 	//To Top
 	if($('#to-top').length){

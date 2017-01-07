@@ -25,21 +25,18 @@
 				<div class="row">
 					<div class="col-md-12 header">
 						<a><img data-wow-delay="0.25s" class="wow fadeInDown" src="images/logo.png" alt="Logo Chat2rent"></a>
-						<button data-wow-delay="0.25s" class="btn btn-default pull-right about-us wow fadeInDown">chat2rent là gì?</button>
+						<button data-wow-delay="0.25s" class="btn btn-default pull-right about-us wow fadeInDown" data-toggle="modal" data-target="#popup">chat2rent là gì?</button>
 					</div>
 
 					<div class="col-md-12 content">
-						<div data-wow-delay="0.45s" class="model wow fadeIn"></div>
+						<div data-wow-delay="0.4s" class="model wow fadeIn"></div>
 						<div class="h3-content col-md-12">
-							<h3 data-wow-delay="0.85s" class="wow fadeInUp">Bạn sắp đi sự kiện quan trọng?</h3>
-							<h3 data-wow-delay="2s" class="wow fadeInUp">Bạn muốn nỗi bật giữa đám đông</h3>
-							<h3 data-wow-delay="2.85s" class="wow fadeInUp">Bạn muốn tiết kiệm chi phí</h3>
-							<button data-wow-delay="3.15s" class="btn btn-default wow fadeInUp">Hãy để chúng tôi giúp bạn !</button>
+							<h3 data-wow-delay="1s" data-wow-du class="wow fadeInDown">Bạn sắp đi sự kiện quan trọng?</h3>
+							<h3 data-wow-delay="2.5s" class="wow fadeInDown">BẠN MUỐN NỖI BẬT GIỮA ĐÁM ĐÔNG</h3>
+							<h3 data-wow-delay="4s" class="wow fadeInDown">BẠN KHÔNG MUỐN MUA MỚI VÌ LÃNG PHÍ?</h3>
+							<button data-wow-delay="5.2s" class="btn btn-default wow fadeInDown">HÃY THUÊ NGAY</button>
 						</div>
 					</div>
-
-					<div class="scroll">scroll</div>
-
 				</div>
 			</div>
 		</div>
@@ -47,17 +44,59 @@
 		<div id="page-2">
 			<div class="container">
 				<div class="row">
-					<h3>Chỉ với <span class="orange">3</span> bước đơn giản</h3>
-					<div class="step-1 col-md-3 col-md-offset-9">
+					<h3 data-wow-delay="0.4s" data-wow-duration="2s" class="wow fadeInUp">Chỉ với <span class="orange">3</span> bước đơn giản</h3>
+					<div data-wow-delay="1.4s" data-wow-duration="2s" class="step-1 wow fadeInUp col-md-4">
 						<h4><span>Bước 1:</span><br/>Đăng ký tải khoản</h4>
 						<p><img src="images/sign-in.png"></p>
 					</div>
+					<div data-wow-delay="2.4s" data-wow-duration="2s" class="step-2 wow fadeInUp col-md-4">
+						<h4><span>Bước 2:</span><br/>Tìm món đồ muốn thuê</h4>
+						<p><img src="images/choose.png"></p>
+					</div>
+					<div data-wow-delay="3.4s" data-wow-duration="2s" class="step-4 wow fadeInUp col-md-4">
+						<h4><span>Bước 3:</span><br/>Chat với chúng tôi</h4>
+						<p><img src="images/chat.png"></p>
+					</div>
+					<button data-wow-delay="3.4s" data-wow-duration="2s" class="btn btn-default wow fadeInUp">Hãy CHAT với chúng tôi ngay và nhận ưu đãi FREESHIP cho khách hàng mới</button>
 				</div>
 			</div>			
 		</div>
+		<!--End Page 2-->
+		<!--Start of Tawk.to Script-->
+		<script type="text/javascript">
+		var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+		(function(){
+		var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+		s1.async=true;
+		s1.src='https://embed.tawk.to/586f80b15e5821218b322856/default';
+		s1.charset='UTF-8';
+		s1.setAttribute('crossorigin','*');
+		s0.parentNode.insertBefore(s1,s0);
+		})();
+		</script>
+		<!--End of Tawk.to Script-->
+		<div data-wow-delay="0.25s" data-wow-duration="2.5s" data-wow-iteration="80" id="scroll-down" class="wow fadeInDown"><img src="images/scroll-down.png"></div>
+		<footer class="container">
+			<p>Copyright 2016 Chat2rent. All right reserved. <a href="http://tnt-studio.online">Design by TNT Studio</a></p>
+		</footer>
 	</div>
 	<!--End Wrapper-->
-	<div id="to-top" class="allTrans">To Top</div>
+	<div id="popup" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<h3>1. Giới thiệu về Chat2rent</h3>
+					<p class="spencial">"Chat2rent là một dịch vụ giúp bạn tìm thuê món đồ mình cần một cách dễ dàng nhất. Chỉ đơn giản trong vài câu chat"</p>
+					<h3>2. Lợi ích khi thuê qua Chat2rent</h3>
+					<p><img src="images/loi-ich-1.jpg"></p>
+					<p><img src="images/loi-ich-2.jpg"></p>
+					<p><img src="images/loi-ich-3.jpg"></p>
+					<!-- <button class="btn btn-default">BẮT ĐẦU CHAT NÀO</button> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--End Popup-->
 <script src="js/jquery.2.2.4.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/wow.min.js"></script>
