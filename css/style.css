@@ -22,7 +22,7 @@ body {
     display: block;
     position: relative;
     font-family: 'SanFranciscoText-Regular'; }
-    body #wrapper #page-1 .header .about-us, body #wrapper #page-1 .content .h3-content button, body #wrapper #page-2 button {
+    body #wrapper #page-1 .header .about-us, body #wrapper #page-1 .content .h3-content button, body #wrapper #page-2 div.col-md-8 {
       -o-transition: all .2s ease-in-out;
       -moz-transition: all .2s ease-in-out;
       -webkit-transition: all .2s ease-in-out;
@@ -58,12 +58,8 @@ body {
           color: #ff5400; }
     #wrapper #page-1 .content {
       display: block;
-      overflow: hidden;
-      position: relative;
-      text-align: center;
-      margin-top: -60px; }
+      position: relative; }
       #wrapper #page-1 .content .model {
-        width: 100%;
         height: 730px;
         background: url(../images/model.png) no-repeat center top;
         display: block;
@@ -72,13 +68,15 @@ body {
       #wrapper #page-1 .content .h3-content {
         z-index: 3;
         position: absolute;
-        top: 35%; }
+        top: 35%;
+        text-align: center; }
         #wrapper #page-1 .content .h3-content h3 {
           font-size: 22px;
           color: #fff;
           text-transform: uppercase;
           letter-spacing: 5px;
           margin-bottom: 40px;
+          line-height: 28px;
           text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.8);
           -moz-text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.8);
           -webkit-text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.8); }
@@ -117,23 +115,26 @@ body {
       text-transform: uppercase; }
       #wrapper #page-2 h3 span {
         color: #ff5400; }
-    #wrapper #page-2 .wow {
+    #wrapper #page-2 .two {
       text-align: center; }
-      #wrapper #page-2 .wow h4 {
+      #wrapper #page-2 .two h4 {
         font-size: 22px;
         color: #ff5400;
         line-height: 34px; }
-        #wrapper #page-2 .wow h4 span {
+        #wrapper #page-2 .two h4 span {
           color: #555;
           font-size: 20px; }
-    #wrapper #page-2 button {
+    #wrapper #page-2 div.col-md-8 {
       font-size: 22px;
       color: #fff;
       background-color: #ff5400;
-      margin: 30px 0 70px;
+      margin-top: 30px;
+      margin-bottom: 60px;
+      padding: 6px 0;
       border: 0;
-      outline: none; }
-      #wrapper #page-2 button:hover {
+      outline: none;
+      border-radius: 3px; }
+      #wrapper #page-2 div.col-md-8:hover {
         color: #ff5400;
         background: #fff;
         border: 1px solid #ff5400; }
@@ -191,5 +192,30 @@ body {
       text-align: justify;
       text-justify: inter-word;
       margin-bottom: 60px; }
+
+/*** Responsive ***/
+@media only screen and (max-width: 768px) {
+  .chat-now {
+    display: none; } }
+@media only screen and (max-width: 540px) {
+  #page-1 .header a img {
+    width: 43%; }
+  #page-1 .content {
+    padding-left: 0;
+    padding-right: 0; }
+    #page-1 .content .h3-content h3 {
+      font-size: 18px !important;
+      margin-bottom: 25px !important; }
+
+  footer {
+    display: none !important; }
+
+  #popup .modal-body {
+    padding: 15px !important; }
+    #popup .modal-body img {
+      width: 100%; }
+
+  #scroll-down {
+    display: none !important; } }
 
 /*# sourceMappingURL=style.css.map */
